@@ -5,5 +5,5 @@
   tasks:
   - name: Install git
     yum:
-      name: git
-      state: absent
+      name: httpd
+      state: latest
