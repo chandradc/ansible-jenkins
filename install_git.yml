@@ -1,6 +1,8 @@
 ---
 - name: Install Git
   hosts: web
+  env:
+    ANSIBLE_HOST_KEY_CHECKING: false
   become: true
   tasks:
   - name: Install git
