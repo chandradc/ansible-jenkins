@@ -1,11 +1,9 @@
 ---
 - name: Install Git
   hosts: web
-  environment:
-    ANSIBLE_HOST_KEY_CHECKING: false
   become: true
   tasks:
   - name: Install git
     yum:
       name: git
-      state: latest
+      state: absent
