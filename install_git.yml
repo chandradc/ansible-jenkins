@@ -1,9 +1,9 @@
 ---
-- name: Install Git
+- name: Install Apache
   hosts: web
   become: true
   tasks:
-  - name: Install git
+  - name: Install Apache
     yum:
-      name: git
-      state: absent
+      name: httpd
+      state: present
