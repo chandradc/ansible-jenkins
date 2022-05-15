@@ -1,9 +1,9 @@
 ---
-- name: Install Apache
+- name: Install Stress
   hosts: web
   become: true
   tasks:
-  - name: Install Apache
+  - name: Install Stress
     yum:
-      name: httpd
+      name: stress
       state: present
