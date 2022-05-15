@@ -5,5 +5,5 @@
   tasks:
   - name: Install Stress
     yum:
-      name: stress
+      name: unzip
       state: present
