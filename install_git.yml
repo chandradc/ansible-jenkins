@@ -1,9 +1,9 @@
 ---
-- name: Install Stress
+- name: Install Docker
   hosts: web
   become: true
   tasks:
-  - name: Install Stress
+  - name: Install Docker
     yum:
       name: docker
       state: present
